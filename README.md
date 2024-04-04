@@ -21,7 +21,7 @@ El kell dobni az adatbázist!
 1. Pessimistic write locking in TimeSeries
 
 ###### Feature:
-1. Added new function: **append**
+1. Added new function: **integral**
 
 example:
 ````java
