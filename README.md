@@ -25,6 +25,20 @@ El kell dobni az adatbázist!
 
 example:
 ````java
+TimeSeriesModel ts = TimeSeriesModel.builder()
+    .definition(name, "name_A")
+    .timeSeries(timeSeries(parse("2023-05-20 00:00"), QUARTER_HOURLY, 1, 1, 1, 1, 2, 2, 2, 2))
+.build();
+
+TimeSeriesModel result = ts.integral(HOURLY);
+
+result itms: [4, 8]
+````
+
+2. Added new function: **append**
+
+example:
+````java
 append(
     TimeSeriesModel.builder()
         .definition(name, "name_A")
