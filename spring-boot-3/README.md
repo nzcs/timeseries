@@ -24,13 +24,37 @@ El kell dobni az adatbázist!
 
 ````xlm
     <dependency>
-        <groupId>hu.mavir.boss</groupId>
-        <artifactId>timeseries-jpa</artifactId>
-        <version>2.0.0-SNAPSHOT</version>
-    </dependency>
+            <groupId>hu.mavir.boss</groupId>
+            <artifactId>timeseries-core</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>
+                ${project.basedir}/src/main/resources/webapp/WEB-INF/lib/timeseries-core-2.0.0-SNAPSHOT.jar
+            </systemPath>
+        </dependency>
+        
+        <dependency>
+            <groupId>hu.mavir.boss</groupId>
+            <artifactId>timeseries-qdsl</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>
+                ${project.basedir}/src/main/resources/webapp/WEB-INF/lib/timeseries-qdsl-2.0.0-SNAPSHOT.jar
+            </systemPath>
+        </dependency>
+        
+        <dependency>
+            <groupId>hu.mavir.boss</groupId>
+            <artifactId>timeseries-jpa</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>
+                ${project.basedir}/src/main/resources/webapp/WEB-INF/lib/timeseries-jpa-2.0.0-SNAPSHOT.jar
+            </systemPath>
+        </dependency>
 ````
 
-This bean needs to be created:
+This bean needs to be created! Example:
 ````java
     @Bean
     public Definitions definitions() {
