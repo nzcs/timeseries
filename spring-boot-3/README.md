@@ -9,8 +9,9 @@ El kell dobni az adatbázist!
         order_inserts: true
         order_updates: true
         timezone:
-          default_storage: NORMALIZE_UTC
+          default_storage: NORMALIZE
         jdbc:
+          time_zone: UTC
           batch_size: 1000
           fetch_size: 1000
           batch_versioned_data: true
