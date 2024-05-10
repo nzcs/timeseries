@@ -16,6 +16,9 @@ El kell dobni az adatbázist!
 ```
 
 ### Releases
+##### #34 commit
+javax.persistence.lock.timeout => 10min
+
 ##### #24 commit
 ###### Bug fix:
 1. Pessimistic write locking in TimeSeries
