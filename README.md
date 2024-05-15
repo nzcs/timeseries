@@ -16,6 +16,11 @@ El kell dobni az adatbázist!
 ```
 
 ### Releases
+##### #35 commit
+
+labels: "!oracle_ee"
+
+
 ##### #34 commit
 javax.persistence.lock.timeout => 10min
 
