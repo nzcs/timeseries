@@ -18,6 +18,10 @@ El kell dobni az adatbázist!
 ```
 
 ### Releases
+##### #2 commit
+
+enable row movement
+
 ##### #1 commit
 
 ###### Feature:
